@@ -5,7 +5,7 @@
   padding: 12px 20px;
   background: #000; /* Black background */
   color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }
