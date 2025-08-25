@@ -10,7 +10,14 @@ const Hero = () => {
       <p>Software developers are responsible for designing, developing and maintaining software systems, applications and programs.</p>
       <div className="hero-action">
         <div className="hero-connect">Connect With Me</div>
-        <div className="hero-resume">My Resume</div>
+        <a 
+  href="/resume.pdf" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className="btn"
+>
+  My Resume
+</a>
       </div>
     </div>
   );

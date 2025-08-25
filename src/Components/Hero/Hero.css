@@ -39,7 +39,31 @@
     background: linear-gradient(264deg, #DF8908 -5.09%, #15ff2f 106.28%);
     cursor: pointer;
 }
-.hero-resume{
+.btn {
+  display: inline-block;
+  padding: 20px 40px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #15ff2f 106.28%);   /* button background color */
+  color: white;          /* text color */
+  font-size: 28px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;    /* rounded corners */
+  text-decoration: none; /* remove underline */
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.btn:hover {
+  background: linear-gradient(264deg, #DF8908 -5.09%, #15ff2f 106.28%);
+  transform: scale(1.05);
+}
+
+/* Optional: add shadow */
+.btn:active {
+  transform: scale(0.98);
+}
+.hero-a{
     padding: 25px 75px;
     border-radius: 50px;
     border: 2px solid #FFF;

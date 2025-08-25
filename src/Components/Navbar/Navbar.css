@@ -1,67 +1,68 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
-}
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 20px;
-}
-.nav-connect{
-    padding: 20px 40px;
-    border-radius: 50px;
-    background: linear-gradient(267deg, #DA7C25 0.36%, #43e123 102.06%);
-    font-size: 22px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-.nav-connect:hover{
-    transform: scale(1.06);
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: #000; /* Black background */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Logo */
+.logo {
+  width: 40px;
+}
 
-@media only screen and (max-width: 750px) {
+/* Nav Menu */
+.nav-menu {
+  display: flex;
+  flex-direction: row;   /* Always horizontal */
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+.nav-menu li:hover {
+  color: #00ff00; /* Hover effect */
+}
+
+/* Connect Button */
+.nav-connect {
+  margin-left: 20px;
+  font-size: 14px;
+  background: #00ff00;
+  color: black;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Hide Hamburger */
+.hamburger {
+  display: none;
+}
+
+/* ✅ Mobile View */
+@media (max-width: 768px) {
   .nav-menu {
-    gap: 15px;
-  }
-
-  .nav-menu li {
-    font-size: 0.9rem;
+    gap: 12px;
+    font-size: 13px;
+    flex-wrap: wrap; /* Allow wrapping if too small */
   }
 
   .nav-connect {
-    padding: 6px 15px;
-  }
-}
-
-
-@media only screen and (max-width: 400px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 15px;
-  }
-
-  .nav-menu {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
-    width: 100%;
-  }
-
-  .nav-menu li {
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-
-  .nav-connect {
-    margin-top: 10px;
-    width: 100%;
-    text-align: center;
-  }
+    font-size: 12px;
+    padding: 4px 8px;
+ }
 }
