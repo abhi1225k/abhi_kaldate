@@ -96,68 +96,52 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-  .about {
-    padding: 40px;
+@media (max-width: 768px) {
+  .about{
+    gap: 80px;
+    margin: 50px;
+    align-items: start;
   }
-
-  .about-section {
+  .about-title h1{
+    font-size: 80px;
+    padding: 0;
+  }
+  .about-title img{
+    width: 130px;
+    right: -20px;
+  }
+  .about-section{
     flex-direction: column;
-    text-align: center;
   }
-
-  .about-left img {
-    width: 200px;
+  .about-left{
+    display: none;
   }
-
-  .about-para p {
-    font-size: 1rem;
+  .about-para{
+    font-size: 18px;
+    line-height: 32px;
   }
-
-  .about-skills {
-    gap: 10px;
-  }
-
-  .about-achievement h1 {
-    font-size: 1.5rem;
-  }
-}
-
-
-@media only screen and (max-width: 480px) {
-  .about {
-    padding: 30px 20px;
-  }
-
-  .about-title h1 {
-    font-size: 1.5rem;
-  }
-
-  .about-title img {
-    width: 40px;
-  }
-
-  .about-left img {
-    width: 150px;
-  }
-
-  .about-para p {
-    font-size: 0.95rem;
-    text-align: left;
-  }
-
-  .about-skills {
-    flex-direction: column;
+  .about-skill{
+    gap: 20px;
     align-items: center;
   }
-
-  .about-skill {
-    width: 100%;
-    text-align: center;
+  .about-skill p{
+    font-size: 20px;
   }
-
-  .about-achievements {
-    flex-direction: column;
-    gap: 15px;
- }
+  .about-skill hr{
+    height: 0px;
+  }
+  .about-achievement{
+    justify-content: space-between;
+  }
+  .about-achievement{
+    gap: 10px;
+  }
+  .about-achievement h1{
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .about-achievement p{
+    text-align: center;
+    font-size: 16px;
+  }
 }
