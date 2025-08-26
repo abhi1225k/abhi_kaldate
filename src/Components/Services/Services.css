@@ -75,7 +75,7 @@
   }
 
   .services-container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 3fr);
     gap: 20px;
   }
 
@@ -84,7 +84,7 @@
   }
 
   .services-container p {
-    font-size: 0.95rem;
+    font-size: 0.40rem;
   }
 }
 
@@ -92,7 +92,7 @@
 
 @media only screen and (max-width: 480px) {
   .services {
-    padding: 30px 20px;
+    padding: 10px 10px;
   }
 
   .services-title h1 {
@@ -105,22 +105,47 @@
 
   .services-container {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 5px;
   }
 
   .services-container div {
-    padding: 20px;
+    padding: 30px;
   }
 
   .services-container h2 {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 
   .services-container p {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .services-readmore {
-    font-size: 0.9rem;
+    font-size: 0.9rem;
  }
+}
+
+@media (max-width: 992px) {
+  .services-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .services-container {
+    grid-template-columns: repeat(2,1fr); 
+    gap: 16px; /* 1 column mobile */
+  }
+
+  .services-title h1 {
+    font-size: 27px;
+  }
+
+  .services-format {
+    padding: 16px;
+    font-size: 14px;
+}
+.services-format{
+  padding: 10px;
+}
 }

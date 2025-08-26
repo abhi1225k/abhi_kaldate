@@ -15,6 +15,9 @@ const MyWork = () => {
         <p>E-commerce Application Project Description in C#
             This project involves building a robust E-commerce Application using C# and ASP.NET Core. The application is designed to provide a seamless shopping experience for users while offering efficient management tools for administrators.</p>
         </div>
+        <div className="mywork-showmore">
+          <p>My work</p>
+        </div>
     </div>
   );
 };
