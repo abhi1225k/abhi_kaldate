@@ -13,7 +13,8 @@
     "react": "^19.1.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^19.1.1",
-    "react-scroll": "^1.9.3"
+    "react-scroll": "^1.9.3",
+    "vite": "^7.1.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
@@ -25,5 +26,10 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
     "vite": "^7.1.2"
+  },
+  "script":{
+    "dev":"vite",
+    "build":"vite build",
+    "preview":"vite preview"
   }
 }
