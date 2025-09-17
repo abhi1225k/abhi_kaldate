@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-action">
         <div className="hero-connect">Connect With Me</div>
         <a 
-  href="/resume.pdf" 
+  href="/resume.pdf"
   target="_blank" 
   rel="noopener noreferrer"
   className="btn"

@@ -5,6 +5,7 @@ import underline from '../../assets/nav_underline.svg'
 import menu_open from '../../assets/menu_open.svg'
 import menu_close from '../../assets/menu_close.svg'
 
+
 const Navbar = () => {
 
   const [menu,setMenu] = useState ("home");
