@@ -9,15 +9,8 @@ const Hero = () => {
       <h1><span>I'm Abhishek Kaldate,</span>.Net Full Stack Web Developer</h1>
       <p>Software developers are responsible for designing, developing and maintaining software systems, applications and programs.</p>
       <div className="hero-action">
-        <div className="hero-connect">Connect With Me</div>
-        <a 
-  href="/resume.pdf"
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="btn"
->
-  My Resume
-</a>
+        <a href="/abhik.pdf" target="_blank" rel="noopener noreferrer" className="btn"><div className="hero-connect">Connect With Me</div></a>
+        <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className="btn">My Resume</a>
       </div>
     </div>
   );

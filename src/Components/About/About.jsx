@@ -2,6 +2,8 @@ import React from 'react';
 import './About.css'
 import theme_pattern from '../../assets/theme_pattern.svg'
 import abhi3 from '../../assets/abhi3.png'
+//import { Link } from 'react-router-dom';
+
 
 
 const About = () => {
