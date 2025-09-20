@@ -22,7 +22,7 @@ const Services = () => {
                 
                 <div className='services-readmore'>
                 
-                    <p>Read More</p>
+                    <a href="/abhi101.pdf" target="_blank" rel="noopener noreferrer" className="btn"><p>Read More</p></a>
                     
                     <img src={arrow_icon} alt="" />
                     
