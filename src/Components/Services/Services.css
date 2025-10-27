@@ -92,7 +92,7 @@
   }
   .services-format p{
     font-size: 18px;
-    line-height: 32px;
+    line-height: 18px;
     max-width: 300px;
   }
   .services-readmore img{
@@ -100,6 +100,7 @@
   }
   .services-container{
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
+    
   }
 }

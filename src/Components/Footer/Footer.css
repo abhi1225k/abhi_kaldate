@@ -74,4 +74,9 @@
   .footer-sub{
     grid-template-columns: 1fr 1fr;
   }
+  .footer-email-input{
+    gap: 10px;
+    padding:14px;
+    
+  }
 }

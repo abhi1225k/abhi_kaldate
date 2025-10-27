@@ -108,4 +108,11 @@
     padding: 20px 50px;
     border-radius: 40px;
   }
+  .btn{
+    position: relative;
+    padding-right:10px;
+    align-items: center;
+    border-radius:60px;
+    gap:16px;
+  }
 }
