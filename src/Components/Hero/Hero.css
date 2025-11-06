@@ -3,9 +3,10 @@
     align-items: center;
     flex-direction: column;
     gap: 35px;
+    top: 0;
 }
 .hero img{
-    margin-top: 90px;
+    margin-top: 80px;
 }
 .hero h1{
     text-align: center;

@@ -60,23 +60,55 @@
 }
 
 @media (max-width: 600px) {
-  .Footer{
-    margin: 50px 70px;
-  }
-  .footer-top{
-    flex-direction: column;
-    gap: 50px;
-  }
-  .footer-bottom{
+
+  /* ✅ Make both email and subscribe go vertical */
+  .footer-top-right {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column !important;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
   }
-  .footer-sub{
-    grid-template-columns: 1fr 1fr;
+
+  .footer-email-input {
+    width: 100%;
   }
-  .footer-email-input{
-    gap: 10px;
-    padding:14px;
-    
+
+  /* ✅ Center the subscribe button */
+  .footer-sub {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+  }
+}
+@media (max-width: 600px) {
+  .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-top-left {
+    justify-content: center;
+  }
+
+  .footer-email-input {
+    width: 100%;
+  }
+
+  .footer-sub {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-bottom-right {
+    justify-content: center;
+    gap: 20px;
   }
 }

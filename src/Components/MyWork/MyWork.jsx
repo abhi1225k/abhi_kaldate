@@ -12,16 +12,14 @@ const MyWork = () => {
       </div>
       
     <div className="mywork-container">
-        <p>E-commerce Application Project Description in C#
-            This project involves building a robust E-commerce Application using C# and ASP.NET Core. The application is designed to provide a seamless shopping experience for users while offering efficient management tools for administrators.</p>
         </div>
         <div className="mywork-showmore">
-        <p>See My All Projects Here</p><br/>
-          <a href='https://natural-sugar-jgoylp4zc-abhishek-kaldates-projects.vercel.app/'>1.Natural_Sugar</a>
+        <h1>See My All Projects Here</h1><br/>
+          <a href='https://natural-sugar-jgoylp4zc-abhishek-kaldates-projects.vercel.app/'><h2>1.Natural_Sugar</h2></a>
           <br/>
-          <a href='https://hotel-booking-omega-tan.vercel.app/'>2.Hotel_Booking</a>
+          <a href='https://hotel-booking-omega-tan.vercel.app/'><h2>2.Hotel_Booking</h2></a>
           <br/>
-          <a href='http://surya-dakshin.vercel.app'>3.Surya_Dakshin_Breakfast_Store</a>
+          <a href='http://surya-dakshin.vercel.app'><h2>3.Surya_Dakshin_Breakfast_Store</h2></a>
         </div>
     </div>
   );

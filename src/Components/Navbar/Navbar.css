@@ -1,22 +1,22 @@
-.navbar {
+/*.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 20px;
-  background: #000; /* Black background */
+  background: #000; /* Black background 
   color: white;
   z-index: 1000;
 }
 
-/* Logo */
+/* Logo 
 .logo {
   width: 40px;
 }
 
-/* Nav Menu */
+/* Nav Menu 
 .nav-menu {
   display: flex;
-  flex-direction: row;   /* Always horizontal */
+  flex-direction: row;   /* Always horizontal 
   align-items: center;
   justify-content: center;
   gap: 10px;
@@ -35,7 +35,7 @@
   color: #00ff00; /* Hover effect */
 }
 
-/* Connect Button */
+/* Connect Button 
 .nav-connect {
   margin-left: 20px;
   font-size: 14px;
@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-/* Hide Hamburger */
+/* Hide Hamburger 
 .hamburger {
   display: none;
 }
@@ -72,23 +72,14 @@
   display: none;
 }
 
-/* ✅ Mobile View */
+/* ✅ Mobile View 
 @media (max-width: 768px) {
   .navbar{
     margin: 10px 60px;
   }
   .nav-menu {
-    position: fixed;
-    flex-direction: column;
-    align-items: start;
-    top: 0;
-    gap: 40px;
-    background-color: #292628ff;
-    width: 320px;
-    height: 100%;
-    z-index: 2;
-    transition: right 0.3s;
-    right: -300px;
+    
+    right: -200px;
   }
 
   .nav-connect {
@@ -116,4 +107,62 @@
   gap: 10px;
  }
  
+}*/
+
+/* Smooth anchor scroll */
+html { scroll-behavior: smooth; }
+
+/* base */
+.navbar{
+  position: sticky; top: 0; z-index: 1000;
+  display:flex; align-items:center; justify-content:space-between;
+  height:72px; padding:0 16px; background:#000; /* or your color */
+}
+
+.nav-logo{ width:36px; height:36px; }
+.nav-connect{ color:#fff; border:1px solid #fff; padding:8px 14px; border-radius:10px; }
+
+/* desktop menu */
+.nav-menu{
+  display:flex; gap:28px; list-style:none; margin:0; padding:0;
+  align-items:center;
+}
+.nav-menu li{ position:relative; display:flex; flex-direction:column; align-items:center; }
+.ab{ text-decoration:none; }
+.ab p{ margin:0; color:#fff; font-weight:500; }
+
+/* hide mobile icons on desktop */
+.nav-mob-open, .nav-mob-close{ display:none; }
+
+/* ============ MOBILE ============ */
+@media (max-width: 900px){
+  .nav-connect{ display:none; }
+  .nav-mob-open{ display:block; width:30px; cursor:pointer; }
+
+  /* off-canvas panel controlled by right: ... */
+  .nav-menu{
+    position:fixed;
+    top:0; right:-300px;           /* hidden by default */
+    width:280px; height:100vh;
+    background:#fff;
+    flex-direction:column; align-items:flex-start;
+    padding:84px 18px 24px;
+    gap:18px;
+    transition:right .3s ease;     /* smooth slide */
+    z-index:1001;
+    box-shadow:-6px 0 16px rgba(0,0,0,.12);
+  }
+
+  .nav-menu li{ align-items:flex-start; }
+  .ab p{ color:#111; font-size:18px; }
+
+  .nav-mob-close{
+    display:block; width:28px; cursor:pointer;
+    position:absolute; top:16px; right:16px;
+  }
+}
+
+/* tiny phones */
+@media (max-width: 380px){
+  .nav-menu{ width:260px; }
 }

@@ -1,106 +1,83 @@
+/* Container uses CSS Grid */
 .services{
-    display: flex;
+display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 80px;
     margin: 80px 170px;
 }
-.services-title{
-    position: relative;
+.services-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* large screens */
+  gap: 18px;
 }
-.services-title h1{
-    padding: 0px 30px;
-    font-size: 80px;
-    font-weight: 600;
+
+/* Card basics (tweak to your theme) */
+.services-format{
+  border: 1.5px solid rgba(255,255,255,.35);
+  border-radius: 14px;
+  padding: 18px;
+  background: #0f0f0f;
+  min-height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
 .services-title img{
     position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
 }
-.services-format{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
-    padding: 60px;
-    border-radius: 10px;
-    border: 2px solid white;
-    transition: 0.4s;
-    cursor: pointer;
+
+/* Typography (optional) */
+.services-format h3{ margin: 0 0 10px; font-size: 18px; opacity:.8; }
+.services-format h2{ margin: 0 0 8px; font-size: 20px; line-height:1.2; }
+.services-format p{ margin: 0; opacity:.85; }
+
+.services-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 500;
 }
-.services-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
-    margin-bottom: 80px;
+
+.services-title{
+    position: relative;
 }
-.services-format h3{
-    font-size: 28px;
-    font-weight: 600;
-}
-.services-format h2{
-    font-size: 38px;
-    font-weight: 800;
-    background: linear-gradient(270deg, #Df8908 50% , green 100%);
-    background-clip:  text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.services-format p{
-    color: #d4d4d4;
-    font-size: 24px;
-    line-height: 40px;
-    max-width: 300px;
-}
+
+/* Read more row */
 .services-readmore{
-    display: flex;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ======= Responsive breakpoints ======= */
+
+/* Tablet: 3 columns */
+@media (max-width: 1200px){
+  .services-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 📱 Mobile: 2 columns (what you asked) */
+@media (max-width: 600px){
+  .services-container{
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    align-items: center;
-    margin-top: 20px;
-}
-.services-format:hover{
-    border: 2px solid orange;
-    background-image: linear-gradient(45deg, #e0260a,#6bcc11);
-    transform: scale(1.05);
-    transition: 0.4s;
-}
-
-
-@media (max-width:768px) {
-  .services{
-    align-items: start;
-    gap: 70px;
-    margin: 20px 70px;
-  }
-  .services-title h1{
-    padding: 0;
-    font-size: 50px;
-  }
-  .services-title img{
-    width: 130px;
-    margin-right: -20px;
   }
   .services-format{
-    gap: 10px;
-    padding: 32px;
+    padding: 12px;
   }
-  .services-format h2{
-    font-size: 28px;
-  }
-  .services-format p{
-    font-size: 18px;
-    line-height: 18px;
-    max-width: 300px;
-  }
-  .services-readmore img{
-    width: 20px;
-  }
+}
+
+/* Very small phones: if too tight, fall back to 1 column (optional) */
+@media (max-width: 380px){
   .services-container{
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    
+    grid-template-columns: repeat(1,1fr);
   }
 }
