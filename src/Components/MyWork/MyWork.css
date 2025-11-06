@@ -47,9 +47,11 @@
     gap: 30px;
   }
   .mywork-showmore{
-    padding: 20px 10px;
-    font-size: 28px;
+    padding: 10px 20px;
+    font-size: 10px;
     margin: 10px auto;
+    align-items: center;
+    justify-connect: center;
     cursor: pointer;
   }
 }
