@@ -59,12 +59,15 @@
     right: 30px;
   }
   .nav-mob-close{
-    display:block;
-    position: relative;
-    top: 30px;
-    left: 290px;
-    width: 30px;
+    position: fixed;
+    top: 36px; right: 46px;
+    width: 30px; height:auto;
+    display: block !important;
+    cursor: pointer;
+    z-index: 1002;            /* above overlay */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,.45));
   }
+
   .nav-menu{
     position: fixed;
     flex-direction: column;
@@ -72,7 +75,7 @@
     top: 0;
     gap: 30px;
     background-color: #1F0016;
-    width: 250px;
+    width: 300px;
     height: 100%;
     z-index: 2;
     transition: right 0.5s;
@@ -88,7 +91,11 @@
 @media(max-width:786px){
   .nav-mob-open {
     display: block;
-    position: relative;
+    position: absolute;
     right: 0;
   }
+}
+/* Hide the hamburger while the drawer is open (mobile only) */
+@media (max-width: 768px){
+  .nav-menu.open ~ .nav-mob-open { display: none; }
 }
