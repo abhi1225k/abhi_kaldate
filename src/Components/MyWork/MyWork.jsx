@@ -22,7 +22,7 @@ const MyWork = () => {
           <a href='http://surya-dakshin.vercel.app'><h2>3.Surya_Dakshin_Breakfast_Store</h2></a>
 
 
-          <p>dgsxfhfhghh</p>
+          
         </div>
     </div>
   );
