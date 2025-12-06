@@ -1,11 +1,12 @@
 import React from 'react';
 import './CSharpPage.css'
+import cargo from '../../assets/cargo.png'
 
 const CSharpPage = () => {
   return (
     <div className='skil'>
-      <h3>Natural Sugar pvt.Ltd</h3>
-      Overview:<br/>
+      {/*<h3>Natural Sugar pvt.Ltd</h3>
+       Overview:<br/>
 Natural Sugar is a complete ERP-style sugarcane factory management system designed to digitalize the entire workflow of a sugar mill. The system manages farmers, sugarcane supply, crushing operations, production data, employee activities, and financial reporting.
 <br/>
 It eliminates manual record keeping and improves transparency between the factory and farmers.
@@ -151,14 +152,36 @@ Smooth scrolling UX
 <br/>
 Add new breakfast items
 <br/>
-Update price and image
+ Update price and image
 <br/>
 Manage orders
 <br/>
 
 ✅ Technologies Used:
 <br/>
-React.js, JavaScript, CSS
+React.js, JavaScript, CSS  */}
+
+
+<hr className='divider'/>
+<h3>Visit My Website ..</h3>
+<h1><a href='https://carloo-bice.vercel.app/'>Carloo</a></h1>
+<div className="overview-container">
+  
+  <div className="overview-left">
+    <img src={cargo} alt="Car" />
+  </div>
+
+  <div className="overview-right">
+    <h2>Car Rental Website</h2>
+    <p>
+      Carloo is a fast and simple car rental service offering a variety of 
+      well-maintained cars at affordable prices. Users can browse, compare,
+      and book vehicles instantly with transparent pricing and flexible pickup options.
+    </p>
+  </div>
+
+</div>
+
     </div>
   );
 };

@@ -22,6 +22,48 @@
   border-top: 2px solid #ffffff90;  /* light white line */
 }
 
+.overview-container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+}
+
+.overview-left img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+}
+
+.overview-right {
+  width: 50%;
+}
+
+.overview-right h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.overview-right p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .overview-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .overview-right {
+    width: 100%;
+  }
+}
+
+
 
 /* Mobile view */
 @media (max-width: 768px) {

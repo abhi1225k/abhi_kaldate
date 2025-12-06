@@ -7,7 +7,8 @@ const Hero = () => {
     <div id="home" className="hero">
       <img src={abhi3} alt="" />
       <h1><span>I'm Abhishek Kaldate,</span>.Net Full Stack Web Developer</h1>
-      <p>Software developers are responsible for designing, developing and maintaining software systems, applications and programs.</p>
+      <p>Full Stack Developer (.NET)
+          I transform ideas into powerful digital products using the .NET ecosystem.</p>
       <div className="hero-action">
         <a href="/abhik.pdf" target="_blank" rel="noopener noreferrer" className="btn">Connect With Me</a>
         <a href="/resume_2025.pdf" target="_blank" rel="noopener noreferrer" className="btn">My Resume</a>
