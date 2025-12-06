@@ -57,7 +57,7 @@ const CSharpPage = () => {
 
 <hr className='divider'/>
 <center><h3>Click the below link...👇</h3>
-<h1><a href='https://surya-dakshin.vercel.app/'>Surya Dakshin Snakes</a></h1></center>
+<h1><a href='https://surya-dakshin.vercel.app/'>Surya Dakshin Breakfast</a></h1></center>
 <div className="overview-container">
   
   <div className="overview-left">
